@@ -3,7 +3,7 @@ This project is a part of individual task from Harisenin's Full-Stack Developmen
 
 # Individual Task 1 - Implementing HTML and CSS
 
-Made a fully responsive **`Personal Website`** using Vanilla HTML and CSS in order to test myself of the pure consept of CSS <br />
+Made a fully responsive **`Personal Website`** using Vanilla HTML and CSS in order to test myself whether I have understood the pure consept of CSS <br />
 Here is the implementation regarding the HTML and CSS that I have learned from the class: 
 - Media Query
 - Flexbox
