@@ -1,0 +1,10 @@
+img.logo-website {
+    width: 6.25rem;
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}

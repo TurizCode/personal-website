@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Poppins:wght@500&family=Raleway:wght@400;500;600;700&display=swap);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f5f9;
+    margin-left: 42px;
+    margin-right: 42px;
+}
+
+main.content-container {
+    display: grid;
+    height: 569px;
+    grid-template-columns: 280px auto;
+    grid-template-rows: 90px auto;
+    gap: 10px;
+}
+
+nav.nav-outer {
+    display: flex;
+    height: 90px;
+    width: auto;
+    justify-content: flex-end;
+}
+
+/*--------------ABOUT ME SECTION--------------*/
+article.article-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.2fr;
+    background-color: #FFFFFF;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px 50px 0px 50px;
+}
+.article-section * {
+    font-family: 'raleway', sans-serif;
+    margin: 0;
+}
+
+/*Brief About Me*/
+.about-me {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+.container-about-me {
+    display: flex;
+    gap: 37px;
+}
+.container-about-me h1 {
+    font-weight: 700;
+    font-size: 28px;
+}
+.container-about-me img {
+    transform: rotateX(-17deg);
+}
+.about-me > p {
+    margin: 10px 0px;
+    font-weight: 400;
+    text-align: justify ;
+}
+.about-me h2 {
+    margin-top: 40px;
+}
+/*Brief About Me Section*/
+
+/*Detail Content Card*/
+.card-detail {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr;
+    gap: 15px;
+    padding-top: 10px;
+}
+.subtitle {
+    grid-column: span 2;
+}
+.card-detail > div {
+    padding: 10px;
+}
+.card-detail h1, p {
+    font-family: 'raleway', sans-serif;
+}
+.card-detail h1 {
+    font-size: 18px;
+}
+.card-detail p {
+    font-size: 14px;
+    text-align: justify;
+}
+.card {
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    padding: 5px;
+}
+.web, .mentor{
+    background-color: #FFEBD1;
+}
+.app, .design {
+    background-color: #F2F7FC;
+}
+.container {
+    display: flex;
+    gap: 10px;    
+}
+/*Detail Content Card END*/
+/*--------------ABOUT ME SECTION END--------------*/
+
+@media screen and (max-width: 950px) {
+    header {
+        justify-content: center;
+    }
+    main.content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    section.profile-card {
+        width: auto;
+    }
+    .contact-tab {
+        gap: 25px;
+        margin-top: 2px;
+    }
+    nav.nav-outer {
+        order: -1;
+        justify-content: center;
+    }
+    div.nav-bar {
+        margin-right: 0px;
+    }
+    .contact-card {
+        width: 260px;
+    }
+
+    .article-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-section * {
+        font-size: smaller;
+    }
+    .article-section h2 {
+        align-self: baseline;
+        font-size: larger;
+    }
+    .about-me {
+        height: fit-content;
+    }
+    .card-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1224px) {
+    .container-about-me h1 {
+        font-size: 22px;
+    }
+    .about-me p {
+        font-size: 14px;
+    }
+    .card-detail h2 {
+        font-size: 21px;
+    }
+    .card h1 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+
+    article.article-section {
+        gap: 15px;
+        grid-template-rows: 0.7fr 1.5fr;
+    }
+
+}
+
+@media screen and (max-width: 526px) {
+    .container-about-me img {
+        display: none;
+    }
+    .container-about-me {
+        justify-content: center;
+    }
+    article.article-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

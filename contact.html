@@ -4,124 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Poppins:wght@500&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/contact.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      $(function () {
+        $("#tHeader").load("./source/template/header.html");
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#tProfileCard").load("./source/template/profile-card.html");
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#tNavbar").load("./source/template/navbar/navbar-contact.html");
+      });
+    </script>
   </head>
   <body>
-    <!-----------------------------------HEADER(logo)---------------------------------------->
+    <!-- # HEADER (template/injected) -->
     <header class="logo-website">
-      <img src="./assets/Logo.png" alt="Logo Picture" />
+      <div id="tHeader"></div>
     </header>
-    <!---------------------------------HEADER(logo) END-------------------------------------->
 
-    <!--------------------------------PROFILE SECTION---------------------------------------->
+    <!-- # MAIN CONTENT -->
     <main class="content-container">
+      <!-- ## Profile Card (template/injected) -->
       <section class="profile-card">
-        <div class="img-container">
-          <img src="./assets/profile picture.png" alt="Profile Picture" />
-        </div>
-        <h1 class="name">Putu Rizki</h1>
-        <p class="job">Full Stack Developer</p>
-        <div class="contact-tab">
-          <a href="#facebook"
-            ><img src="./assets/Facebook.png" alt="Facebook Logo"
-          /></a>
-          <a href="#linkedin"
-            ><img src="./assets/Linkedin.png" alt="Linkedin Logo"
-          /></a>
-          <a href="#twitter"
-            ><img src="./assets/Twitter.png" alt="Twitter Logo"
-          /></a>
-          <a href="#github"
-            ><img src="./assets/Github.png" alt="Github Logo"
-          /></a>
-        </div>
-        <div class="contact-card">
-          <div class="phone-card">
-            <img src="./assets/Phone.png" alt="Phone Logo" />
-            <h2 class="subtittle">Phone</h2>
-            <p class="main-co">+6281999982942</p>
-          </div>
-          <div class="email-card">
-            <img src="./assets/Email.png" alt="Email Logo" />
-            <h2 class="subtittle">Email</h2>
-            <p class="main-co">turizcode@gmail.com</p>
-          </div>
-          <div class="location-card">
-            <img src="./assets/Location.png" alt="Location Logo" />
-            <h2 class="subtittle">Location</h2>
-            <p class="main-co">Indonesia, Bali</p>
-          </div>
-          <div class="btn-download">
-            <button class="btn btn-cv">
-                <a href="./assets/CV - Putu Rizki Eka Wibawa.pdf"><span><img src="./assets/Vector donwload.png" width="12px" alt=""></span> Download Resume</a>
-          </div>
-        </div>
+        <div id="tProfileCard"></div>
       </section>
-      <!--------------------------------PROFILE SECTION END------------------------------------->
 
-      <!-----------------------------------NAVIGATION BAR--------------------------------------->
+      <!-- ## Nav-Bar (template/injected) -->
       <nav class="nav-outer">
-        <div class="nav-bar">
-              <div class="home">
-                  <a href="./index.html"><img src="./assets/Home icon.png" alt="Home Icon"></a>
-              </div>
-              <div class="resume">
-                  <a href="./resume.html"><img src="./assets/resume icon.png" alt="Resume Icon"></a>
-              </div>
-              <div class="contact">
-                  <a href="./contact.html"><img src="./assets/vektor contact putih.png" alt=""></a>
-              </div>
-        </div>
+        <div id="tNavbar"></div>
       </nav>
-      <!---------------------------------NAVIGATION BAR END----------------------------------->
 
-      <!-----------------------------------CONTACT SECTION------------------------------------->
+      <!-- ## Contact Section -->
       <article class="article-section">
         <div class="first-section">
-            <div class="wraper">
-                <div class="header-contact">
-                    <h1>Contact</h1>
-                    <img src="./assets/Line 5.png" alt="colored straight line" height="2px" width="190px" style="align-self: center;">
-                </div>
-                <div class="card phone">
-                    <div class="header-logo">
-                        <img src="./assets/phone contact.png" alt="phone icon" width="15x" style="align-self: center;">
-                        <h1>Phone:</h1>
-                    </div>
-                    <p class="detail">+6281999982942 <br>+6287861017861
-                    </p>
-                </div>
-                <div class="card email">
-                    <div class="header-logo">
-                        <img src="./assets/email contact.png" alt="email icon" height="17px" style="align-self: center;margin-top: 4px;">
-                        <h1>Email:</h1>
-                    </div>
-                    <p class="detail">
-                        turizcode@gmail.com <br> puturizkii45@gmail
-                    </p>
-                </div>
+          <div class="wraper">
+            <div class="header-contact">
+              <h1>Contact</h1>
+              <img
+                src="../assets/Line 5.png"
+                alt="colored straight line"
+                height="2px"
+                width="190px"
+                style="align-self: center"
+              />
             </div>
+            <div class="card phone">
+              <div class="header-logo">
+                <img
+                  src="../assets/phone contact.png"
+                  alt="phone icon"
+                  width="15x"
+                  style="align-self: center"
+                />
+                <h1>Phone:</h1>
+              </div>
+              <p class="detail">+6281999982942 <br />+6287861017861</p>
+            </div>
+            <div class="card email">
+              <div class="header-logo">
+                <img
+                  src="../assets/email contact.png"
+                  alt="email icon"
+                  height="17px"
+                  style="align-self: center; margin-top: 4px"
+                />
+                <h1>Email:</h1>
+              </div>
+              <p class="detail">
+                turizcode@gmail.com <br />
+                puturizkii45@gmail
+              </p>
+            </div>
+          </div>
         </div>
         <div class="second-section">
-            <div class="description">
-                <p>I am always open to discussing <span>new projects</span>, <span>opportunities in tech world, partnerships</span> and more so <span>mentorship</span>. 
-                </p>
+          <div class="description">
+            <p>
+              I am always open to discussing <span>new projects</span>,
+              <span>opportunities in tech world, partnerships</span> and more so
+              <span>mentorship</span>.
+            </p>
+          </div>
+          <div class="action-table">
+            <div class="input">Name:</div>
+            <div class="input">Email:</div>
+            <div class="input">Message:</div>
+            <div class="submit">
+              <button class="submit-btn">
+                <a href="#" alt="">Submit</a>
+              </button>
             </div>
-            <div class="action-table">
-                <div class="input">Name:</div>
-                <div class="input">Email:</div>
-                <div class="input">Message:</div>
-                <div class="submit">
-                    <button class="submit-btn">
-                        <a href="#" alt="">Submit</a>
-                    </button>
-                </div>
-            </div>
+          </div>
         </div>
       </article>
     </main>
